@@ -28,11 +28,22 @@ import SwiftXib
 2. Create you Xib class and extend SwiftXibView class.
 3. Override nibName and set you xib view name.  
 4. Connect Xib File's Owner to your class.
-5. Connect your UI items to your class.
-6. Done!.
 
+## Example
+This example will simply load xib view with SwiftXibView 
+```swift
 
-- You can you override *SetUI()* func for initialise your view - this func will call immediate after you view is done setUp
+Class MyCustomView : SwiftXibView {
+
+  // override nibName and return your nib name. ('nibName.xib)
+  override var nibName: String {return "nibName"}
+  
+  // setUI is call immediately after the view setUp.
+  override func setUI() { 
+    // initialized your view
+  }
+}
+```
 #### For more info check ours Wiki.
 
 
