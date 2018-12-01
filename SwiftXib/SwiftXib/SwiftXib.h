@@ -13,7 +13,3 @@ FOUNDATION_EXPORT double SwiftXibVersionNumber;
 
 //! Project version string for SwiftXib.
 FOUNDATION_EXPORT const unsigned char SwiftXibVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <SwiftXib/PublicHeader.h>
-
-

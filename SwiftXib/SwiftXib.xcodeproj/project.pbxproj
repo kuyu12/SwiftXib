@@ -10,6 +10,7 @@
 		0320F71821B30E19003BF605 /* SwiftXib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0320F70E21B30E19003BF605 /* SwiftXib.framework */; };
 		0320F71D21B30E19003BF605 /* SwiftXibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0320F71C21B30E19003BF605 /* SwiftXibTests.swift */; };
 		0320F71F21B30E19003BF605 /* SwiftXib.h in Headers */ = {isa = PBXBuildFile; fileRef = 0320F71121B30E19003BF605 /* SwiftXib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0320F72921B30E6C003BF605 /* SwiftXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0320F72821B30E6C003BF605 /* SwiftXibView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0320F71721B30E19003BF605 /* SwiftXibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftXibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0320F71C21B30E19003BF605 /* SwiftXibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftXibTests.swift; sourceTree = "<group>"; };
 		0320F71E21B30E19003BF605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0320F72821B30E6C003BF605 /* SwiftXibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftXibView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				0320F71121B30E19003BF605 /* SwiftXib.h */,
 				0320F71221B30E19003BF605 /* Info.plist */,
+				0320F72821B30E6C003BF605 /* SwiftXibView.swift */,
 			);
 			path = SwiftXib;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					0320F70D21B30E19003BF605 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0320F71621B30E19003BF605 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0320F72921B30E6C003BF605 /* SwiftXibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		0320F72321B30E19003BF605 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yairHadad.SwiftXib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +373,7 @@
 		0320F72421B30E19003BF605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +399,7 @@
 		0320F72621B30E19003BF605 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E82HAQFSWT;
 				INFOPLIST_FILE = SwiftXibTests/Info.plist;
@@ -409,6 +418,7 @@
 		0320F72721B30E19003BF605 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E82HAQFSWT;
 				INFOPLIST_FILE = SwiftXibTests/Info.plist;
