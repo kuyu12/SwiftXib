@@ -1,5 +1,5 @@
 //
-//  SwiftXibView.swift
+//  SwiftXibTableViewCell.swift
 //  SwiftXib
 //
 //  Created by yair hadad on 01/12/2018.
@@ -14,16 +14,16 @@ import Foundation
  - **override nibName property.**
  - use setUI metode for initializ views.
  */
-open class SwiftXibView : UIView {
+open class SwiftXibTableViewCell : UITableViewCell {
     open var nibName : String { get {return ""} }
     
     /**
      - parameters:
-     - frame: frame of view
+     - style: UITableViewCellStyle
      */
-    override init(frame: CGRect) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         // 2. call super.init(frame:)
-        super.init(frame: frame)
+        super.init(style: style,reuseIdentifier: reuseIdentifier)
         // 3. Setup view from .xib file
         self.xibSetup()
         self.setUI()
@@ -56,7 +56,7 @@ open class SwiftXibView : UIView {
     fileprivate func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let nib:UINib = UINib(nibName: self.nibName, bundle: bundle)
-        // Assumes UIView is top level and only object in CustomView.xib file
+        // Assumes UIView is top level and only object in CustomView.xib file]
         if let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView {
             return view
         }
@@ -68,5 +68,5 @@ open class SwiftXibView : UIView {
      setUI is call Immediately after the class is initialized
      */
     open func setUI(){}
-
+    
 }
