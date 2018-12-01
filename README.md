@@ -22,6 +22,9 @@ In your application, simply import the library
 import SwiftXib
 ```
 
+## Support Xibs:
+- [x] UIView xib
+- [x] UITableView xib
 
 ## How to use:
 1. Create your Xib view.
