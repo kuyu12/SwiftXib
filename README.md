@@ -1,7 +1,7 @@
 # SwiftXib
 An easy Xib loader:
 
-[![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS%20%7C%20Linux-333333.svg)](https://cocoapods.org/pods/SwiftXib)
+[![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS-333333.svg)](https://cocoapods.org/pods/SwiftXib)
 [![pod](https://img.shields.io/cocoapods/v/SwiftXib.svg?style=flat)](https://cocoapods.org/pods/SwiftXib)
 [![swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
 
