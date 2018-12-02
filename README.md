@@ -47,6 +47,9 @@ Class MyCustomView : SwiftXibView {
   }
 }
 ```
+
+![alt text](https://github.com/kuyu12/SwiftXib/blob/master/Exmples/exmple1.png)
+
 #### For more info check ours Wiki.
 
 
