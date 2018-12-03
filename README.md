@@ -4,6 +4,7 @@ An easy Xib loader:
 [![platform](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS-333333.svg)](https://cocoapods.org/pods/SwiftXib)
 [![pod](https://img.shields.io/cocoapods/v/SwiftXib.svg?style=flat)](https://cocoapods.org/pods/SwiftXib)
 [![swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/kuyu12/SwiftXib)
 
 
 ## Installation
@@ -15,6 +16,14 @@ platform :ios, '8.0'
 use_frameworks!
 pod 'SwiftXib'
 ```
+#### Carthage
+`SwiftXib` is `carthage` compatible. Add the following entry in your `Cartfile`:
+
+```
+github "kuyu12/SwiftXib"
+```
+
+Then run `carthage update`.
 
 In your application, simply import the library
 
