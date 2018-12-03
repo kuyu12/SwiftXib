@@ -13,7 +13,6 @@ You can use [CocoaPods](https://cocoapods.org/pods/SwiftXib) to install `SwiftXi
 
 ```ruby
 platform :ios, '8.0'
-use_frameworks!
 pod 'SwiftXib'
 ```
 #### Carthage
